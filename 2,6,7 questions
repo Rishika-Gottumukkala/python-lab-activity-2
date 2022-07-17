@@ -1,0 +1,77 @@
+2(a)
+
+# Python Program to Print Floyd's Triangle
+rows = int(input("Please Enter the total Number of Rows : "))
+number = 1
+
+print("Floyd's Triangle")
+for i in range(1, rows + 1):
+  for j in range(1, i + 1):
+    print(number, end = ' ')
+    number = number + 1
+  print()
+  
+2(b)
+ 
+no_heaps = int(input("Enter no of pubble heaps"))
+heaps = no_heaps
+if(no_heaps % 2 == 0):
+  while(no_heaps > 0):
+    print(heaps)
+    heaps = heaps + 2
+    no_heaps = no_heaps - 1
+else:
+  while(no_heaps > 0):
+    print(heaps)
+    heaps = heaps + 2
+    no_heaps = no_heaps - 1
+  
+6(a)
+
+str = input("Input a string")
+digits = 0
+upper = 0
+lower = 0
+for char in str:
+  if char.isdigit():
+    digits = digits + 1
+  elif char.isupper():
+    upper = upper + 1
+  elif char.islower():
+    lower = lower + 1
+  else:
+    pass
+print("Digits : ",digits)
+print("Lower case letters : ", lower)
+print("Upper case letters : ",upper)
+
+6(b)
+
+from array import *
+a=array('i',[1,4,2,6,8,3,10])     
+ele=int(input("Enter search element"))
+flag=0
+for i in range(len(a)):
+        if(a[i] == ele):
+            flag=i+1
+            break
+        else:
+             pass
+if(flag == 0):
+    print("Not found")
+else:
+    print('Element found in',flag,'position')
+    
+7
+
+def count(s, c) :
+    res = 0
+    for i in range(len(s)) :
+        if (s[i] == c):
+            res = res + 1
+    return res
+str= "hello world"
+c = 'l'
+print(count(str, c))
+
+  
